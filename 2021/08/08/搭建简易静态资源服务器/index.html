@@ -20,28 +20,33 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="欢迎来到cd的博客！">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="github地址以及用法1234https:&#x2F;&#x2F;github.com&#x2F;chenduo-dd&#x2F;servenpm linkcdserve -p 3306cdserve -d c:   原理一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径123456789101112131415161718192021222324const &amp;#123; program">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建简易静态资源服务器">
+<meta property="og:url" content="http://example.com/2021/08/08/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="欢迎来到cd的博客！">
+<meta property="og:description" content="github地址以及用法1234https:&#x2F;&#x2F;github.com&#x2F;chenduo-dd&#x2F;servenpm linkcdserve -p 3306cdserve -d c:   原理一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径123456789101112131415161718192021222324const &amp;#123; program">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-08-08T14:15:39.000Z">
+<meta property="article:modified_time" content="2021-08-08T14:52:06.659Z">
 <meta property="article:author" content="cd">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/08/08/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-Hans'
   };
 </script>
 
-  <title>欢迎来到cd的博客！</title>
+  <title>搭建简易静态资源服务器 | 欢迎来到cd的博客！</title>
   
 
 
@@ -139,9 +144,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
@@ -157,10 +163,9 @@
       <meta itemprop="name" content="欢迎来到cd的博客！">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/08/%E6%90%AD%E5%BB%BA%E7%AE%80%E6%98%93%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-title-link" itemprop="url">搭建简易静态资源服务器</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          搭建简易静态资源服务器
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,99 +189,40 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="github地址以及用法"><a href="#github地址以及用法" class="headerlink" title="github地址以及用法"></a>github地址以及用法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/chenduo-dd/serve</span><br><span class="line">npm link</span><br><span class="line">cdserve -p 3306</span><br><span class="line">cdserve -d c:</span><br></pre></td></tr></table></figure>
+        <h2 id="github地址以及用法"><a href="#github地址以及用法" class="headerlink" title="github地址以及用法"></a>github地址以及用法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/chenduo-dd/serve</span><br><span class="line">npm link</span><br><span class="line">cdserve -p 3306</span><br><span class="line">cdserve -d c:</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h3 id="一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径"><a href="#一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径" class="headerlink" title="一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径"></a>一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">const &#123; program &#125; = require(<span class="string">&#x27;commander&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">let</span> options = &#123;</span><br><span class="line">    <span class="string">&#x27;-p --port &lt;dir&gt;&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;description&#x27;</span>: <span class="string">&#x27;init server port&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;example&#x27;</span>: <span class="string">&#x27;cdserve -p 3306&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&#x27;-d --directory &lt;dir&gt;&#x27;</span>: &#123;</span><br><span class="line">        <span class="string">&#x27;description&#x27;</span>: <span class="string">&#x27;init server directory&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;example&#x27;</span>: <span class="string">&#x27;cdserve -d c:&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> formatConfig(configs, cb) &#123;</span><br><span class="line">    Object.entries(configs).forEach(([key, val]) =&gt; &#123;</span><br><span class="line">        cb(key, val)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">formatConfig(options, (cmd, val) =&gt; &#123;</span><br><span class="line">    program.option(cmd, val.description)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">program.parse()</span><br></pre></td></tr></table></figure>
 <h3 id="二、将参数传入Serve类，建立静态服务器"><a href="#二、将参数传入Serve类，建立静态服务器" class="headerlink" title="二、将参数传入Serve类，建立静态服务器"></a>二、将参数传入Serve类，建立静态服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> cmdConfig = program.opts()</span><br><span class="line">new Server(cmdConfig).start()</span><br><span class="line"></span><br><span class="line">class Server &#123;</span><br><span class="line">    constructor(config) &#123;</span><br><span class="line">        this.config = mergeConfig(config)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="title">start</span></span>() &#123;</span><br><span class="line">        <span class="built_in">let</span> server = http.createServer(this.serveHandle.bind(this))</span><br><span class="line">        server.listen(this.config.port, () =&gt; &#123;</span><br><span class="line">            console.log(<span class="string">&#x27;服务端已经启动了&#x27;</span>)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="三、处理请求，判断静态资源请求"><a href="#三、处理请求，判断静态资源请求" class="headerlink" title="三、处理请求，判断静态资源请求"></a>三、处理请求，判断静态资源请求</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  判断文件路径是否存在，不存在直接返回404</span></span><br><span class="line"><span class="comment">#  如果不是文件夹，则进行文件传输</span></span><br><span class="line"><span class="comment">#  如果是文件夹则利用ejs模版显示文件夹下的内容</span></span><br><span class="line">async serveHandle(req, res) &#123;</span><br><span class="line">    <span class="built_in">let</span> &#123; pathname &#125; = url.parse(req.url)</span><br><span class="line">    pathname = decodeURIComponent(pathname)</span><br><span class="line">    <span class="comment">#  获得绝对路径</span></span><br><span class="line">    <span class="built_in">let</span> abspath = path.join(this.config.directory, pathname)</span><br><span class="line">    try &#123;</span><br><span class="line">        <span class="built_in">let</span> statObj = await fs.stat(abspath)</span><br><span class="line">        <span class="comment"># 是文件直接返回</span></span><br><span class="line">        <span class="keyword">if</span> (statObj.isFile()) &#123;</span><br><span class="line">            this.fileHandle(req, res, abspath)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">let</span> <span class="built_in">dirs</span> = await fs.readdir(abspath)</span><br><span class="line">            <span class="comment">#  判断文件夹下的文件是否为文件或文件夹 用于模版图标显示</span></span><br><span class="line">            <span class="built_in">dirs</span> = await Promise.all(</span><br><span class="line">                dirs.map(async item =&gt; &#123;</span><br><span class="line">                    const itemPath = path.join(pathname, item)</span><br><span class="line">                    const itemAbspath = path.resolve(abspath, item)</span><br><span class="line">                    <span class="built_in">let</span> itemStat = await fs.stat(itemAbspath)</span><br><span class="line">                    <span class="built_in">return</span> &#123;</span><br><span class="line">                        path: itemPath,</span><br><span class="line">                        <span class="built_in">dirs</span>: item,</span><br><span class="line">                        isFile: itemStat.isFile()</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">            )</span><br><span class="line">            <span class="built_in">let</span> renderFile = promisify(ejs.renderFile)</span><br><span class="line">            <span class="built_in">let</span> parentPath = path.dirname(pathname)</span><br><span class="line">            <span class="comment">#  渲染文件夹页面</span></span><br><span class="line">            <span class="built_in">let</span> ret = await renderFile(path.resolve(__dirname, <span class="string">&#x27;template.html&#x27;</span>), &#123;</span><br><span class="line">                arr: <span class="built_in">dirs</span>,</span><br><span class="line">                parent: pathname !== <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">                parentPath,</span><br><span class="line">                title: path.basename(abspath)</span><br><span class="line">            &#125;)</span><br><span class="line">            res.end(ret)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; catch (err) &#123;</span><br><span class="line">        this.errorHandle(req, res, err)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="四、错误处理以及文件传输"><a href="#四、错误处理以及文件传输" class="headerlink" title="四、错误处理以及文件传输"></a>四、错误处理以及文件传输</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  创建可读流通过pipe方法传输给可写流res 进行文件传输</span></span><br><span class="line">fileHandle(req, res, abspath) &#123;</span><br><span class="line">    res.statusCode = 200</span><br><span class="line">    res.setHeader(<span class="string">&#x27;Content-type&#x27;</span>, `<span class="variable">$&#123;mime.getType(abspath)&#125;</span>;charset=utf-8`)</span><br><span class="line">    createReadStream(abspath).pipe(res)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">#  没有文件直接返回404</span></span><br><span class="line">errorHandle(req, res, err) &#123;</span><br><span class="line">    console.log(err)</span><br><span class="line">    res.statusCode = 404</span><br><span class="line">    res.setHeader(<span class="string">&#x27;Content-type&#x27;</span>, <span class="string">&#x27;text/html;charset=utf-8&#x27;</span>)</span><br><span class="line">    res.end(<span class="string">&#x27;not found&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/16/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="cd">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="欢迎来到cd的博客！">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/16/hello-world/" class="post-title-link" itemprop="url">cd's blog!!</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2021-07-16 23:03:15 / Modified: 23:47:22" itemprop="dateCreated datePublished" datetime="2021-07-16T23:03:15+08:00">2021-07-16</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/07/16/hello-world/" rel="prev" title="cd's blog!!">
+      <i class="fa fa-chevron-left"></i> cd's blog!!
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -329,6 +275,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#github%E5%9C%B0%E5%9D%80%E4%BB%A5%E5%8F%8A%E7%94%A8%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">github地址以及用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BD%BF%E7%94%A8commander%E5%BA%93%E8%AE%BE%E7%BD%AE%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%8B%BF%E5%88%B0%E7%94%A8%E6%88%B7%E4%BC%A0%E5%85%A5%E7%9A%84port%E7%AB%AF%E5%8F%A3%E5%8F%B7%E5%92%8Cdirectory%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E8%B7%AF%E5%BE%84"><span class="nav-number">2.1.</span> <span class="nav-text">一、使用commander库设置命令，拿到用户传入的port端口号和directory静态资源路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B0%86%E5%8F%82%E6%95%B0%E4%BC%A0%E5%85%A5Serve%E7%B1%BB%EF%BC%8C%E5%BB%BA%E7%AB%8B%E9%9D%99%E6%80%81%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">2.2.</span> <span class="nav-text">二、将参数传入Serve类，建立静态服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%A4%84%E7%90%86%E8%AF%B7%E6%B1%82%EF%BC%8C%E5%88%A4%E6%96%AD%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E8%AF%B7%E6%B1%82"><span class="nav-number">2.3.</span> <span class="nav-text">三、处理请求，判断静态资源请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E4%BB%A5%E5%8F%8A%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93"><span class="nav-number">2.4.</span> <span class="nav-text">四、错误处理以及文件传输</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
